@@ -16,6 +16,7 @@ source $HOME/.dotfiles/.zsh-alias
 
 
 LIBDIR=$HOME/development/lib
+SOURCEDIR=$HOME/development/src
 
 for f in $HOME/.dotfiles/env/*; do
   source $f
