@@ -1,3 +1,3 @@
-ERLANG_PATH=$HOME/development/lib/erlang-19.3
+ERLANG_PATH=$HOME/development/lib/erlang-20.0
 
 PATH=$PATH:$ERLANG_PATH/bin
