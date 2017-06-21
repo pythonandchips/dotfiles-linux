@@ -1,0 +1,7 @@
+alias ls="ls --color=auto"
+alias b="bundle"
+alias be="bundle exec"
+alias rc="bundle exec rails console"
+alias rs="bundle exec rails server"
+alias rake="bundle exec rake"
+alias ..="cd .."

@@ -1,0 +1,3 @@
+export GOPATH=$HOME/development
+export GOROOT=$HOME/development/lib/go-1.8.3
+PATH=$PATH:$GOROOT/bin
