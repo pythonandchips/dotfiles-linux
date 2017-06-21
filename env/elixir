@@ -1,0 +1,3 @@
+ELIXIR_PATH=$HOME/development/lib/elixir-1.4.4
+
+PATH=$PATH:$ELIXIR_PATH/bin

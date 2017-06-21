@@ -1,0 +1,3 @@
+ERLANG_PATH=$HOME/development/lib/erlang-19.3
+
+PATH=$PATH:$ERLANG_PATH/bin

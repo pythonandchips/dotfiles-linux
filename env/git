@@ -1,0 +1,2 @@
+GIT_PATH=$LIBDIR/git-2.9.4
+PATH=$PATH:$GIT_PATH/bin

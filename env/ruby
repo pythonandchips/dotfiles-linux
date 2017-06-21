@@ -1,0 +1,6 @@
+RUBY_PATH=$LIBDIR/ruby-2.4.1
+export GEM_HOME=$RUBY_PATH/gems
+export GEM_PATH=$RUBY_PATH/gems
+export GEM_SPEC_CACHE=$RUBY_PATH/gem_cache
+export GEM_USER_INSTALLATION=$RUBY_PATH/gem_user
+PATH=$PATH:$RUBY_PATH/bin:$RUBY_PATH/gems/bin
