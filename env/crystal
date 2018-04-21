@@ -1,0 +1,2 @@
+export CRYSTALPATH=$LIBDIR/crystal-0.24.1
+PATH=$PATH:$CRYSTALPATH/bin

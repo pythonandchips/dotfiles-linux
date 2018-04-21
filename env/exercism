@@ -1,0 +1,7 @@
+EXERCISM_HOME=$LIBDIR/exercism
+
+PATH=$PATH:$EXERCISM_HOME/bin
+
+if [ -f $EXERCISM_HOME/exercism_completion.zsh ]; then
+  . $EXERCISM_HOME/exercism_completion.zsh
+fi

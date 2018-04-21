@@ -1,0 +1,4 @@
+VSCODE_HOME=$HOME/development/lib/vscode-1.20.1
+
+PATH=$PATH:$VSCODE_HOME/bin
+

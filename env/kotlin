@@ -1,0 +1,3 @@
+KOTLIN_PATH=$HOME/development/lib/kotlin-1.1.3-2
+
+PATH=$PATH:$KOTLIN_PATH/bin

@@ -1,5 +1,5 @@
 export ANDROID_HOME=$HOME/development/lib/android_sdk
-ANDROID_STUDIO_HOME=$HOME/development/lib/android_studio-2.3
+export ANDROID_STUDIO_HOME=$HOME/development/lib/android-studio-3.0
 
 PATH=$PATH:$ANDROID_STUDIO_HOME/bin
 PATH=$PATH:$ANDROID_HOME/bin

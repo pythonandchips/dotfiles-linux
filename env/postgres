@@ -1,0 +1,6 @@
+POSTGRES_PATH=$LIBDIR/postgres-10.3
+export PGDATA=$POSTGRES_PATH/config
+
+PATH=$PATH:$POSTGRES_PATH/bin
+
+alias pg_start="pg_ctl -D /home/colin/development/lib/postgres-10.3/data -l logfile start"
