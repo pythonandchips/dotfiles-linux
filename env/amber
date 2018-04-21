@@ -1,0 +1,2 @@
+export AMBERPATH=$LIBDIR/amber-0.6.4
+PATH=$PATH:$AMBERPATH/bin

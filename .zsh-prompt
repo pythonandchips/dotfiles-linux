@@ -1,5 +1,16 @@
 autoload -Uz colors && colors
 
+function git_current_branch() {
+  local ref
+  ref=$(command git symbolic-ref --quiet HEAD 2> /dev/null)
+  local ret=$?
+  if [[ $ret != 0 ]]; then
+    [[ $ret == 128 ]] && return  # no git repo.
+    ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
+  fi
+  echo ${ref#refs/heads/}
+}
+
 eval `dircolors $HOME/.dircolors`
 
 local return_code="%(?..%{$fg[red]%}%? %{$reset_color%})"
@@ -13,10 +24,9 @@ else
 fi
 
 local current_dir="%{$fg[blue]%}%~%{$reset_color%}"
-#local git_branch='$(git_prompt_info)%{$reset_color%}'
 
 PROMPT="╭─${user_host} ${current_dir}
-╰─%B${user_symbol}%b "
+╰─%B${user_symbol}%b ${git_branch}"
 RPS1="%B${return_code}%b"
 
 #ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
