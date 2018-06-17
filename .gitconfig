@@ -1,0 +1,10 @@
+[user]
+	name = Colin Gemmell
+	email = pythonandchips@gmail.com
+[core]
+	excludesfile = /home/colin/.gitignore
+	editor = vim
+[alias]
+	force-push = push --force-with-lease
+[push]
+	default = current
