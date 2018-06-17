@@ -3,6 +3,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt inc_append_history
+setopt share_history
 bindkey -e
 
 zstyle :compinstall filename '/home/colin/.zshrc'
@@ -13,6 +15,7 @@ promptinit
 
 source $HOME/.dotfiles/.zsh-prompt
 source $HOME/.dotfiles/.zsh-alias
+source $HOME/.dotfiles/.flatpak-alias
 
 
 LIBDIR=$HOME/development/lib
@@ -21,3 +24,5 @@ SOURCEDIR=$HOME/development/src
 for f in $HOME/.dotfiles/env/*; do
   source $f
 done
+
+EDITOR=vim

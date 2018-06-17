@@ -11,7 +11,7 @@ function git_current_branch() {
   echo ${ref#refs/heads/}
 }
 
-eval `dircolors $HOME/.dircolors`
+eval `dircolors $HOME/.dotfiles/.dircolors`
 
 local return_code="%(?..%{$fg[red]%}%? %{$reset_color%})"
 
@@ -24,9 +24,10 @@ else
 fi
 
 local current_dir="%{$fg[blue]%}%~%{$reset_color%}"
+local git_branch="${git_current_branch}"
 
-PROMPT="╭─${user_host} ${current_dir}
-╰─%B${user_symbol}%b ${git_branch}"
+PROMPT="╭─${user_host} ${current_dir} ${git_branch}
+╰─%B${user_symbol}%b "
 RPS1="%B${return_code}%b"
 
 #ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
