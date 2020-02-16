@@ -1,6 +1,6 @@
-EXERCISM_HOME=$LIBDIR/exercism
+EXERCISM_HOME=$LIBDIR/exercism-3.0.5
 
-PATH=$PATH:$EXERCISM_HOME/bin
+PATH=$PATH:$EXERCISM_HOME
 
 if [ -f $EXERCISM_HOME/exercism_completion.zsh ]; then
   . $EXERCISM_HOME/exercism_completion.zsh

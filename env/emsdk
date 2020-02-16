@@ -1,0 +1,7 @@
+# EMSDK_ROOT=/home/colin/development/src/github.com/juj/emsdk
+#
+# PATH=$PATH:$EMSDK_ROOT
+# PATH=$PATH:$EMSDK_ROOT/clang/fastcomp/build_incoming_64/bin
+# PATH=$PATH:$EMSDK_ROOT/node/8.9.1_64bit/bin
+# PATH=$PATH:$EMSDK_ROOT/emscripten/incoming
+# PATH=$PATH:$EMSDK_ROOT/binaryen/master_64bit_binaryen/bin

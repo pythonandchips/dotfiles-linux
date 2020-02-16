@@ -1,0 +1,7 @@
+--database=postgresql
+--webpack=stimulus
+--skip-sprockets
+--skip-spring
+--skip-coffee
+--skip-test
+--skip-system-test

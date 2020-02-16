@@ -1,4 +1,4 @@
-RUBY_PATH=$LIBDIR/ruby-2.5.1
+RUBY_PATH=$LIBDIR/ruby-2.6.2
 export GEM_HOME=$RUBY_PATH/gems
 export GEM_PATH=$RUBY_PATH/gems
 export GEM_SPEC_CACHE=$RUBY_PATH/gem_cache

@@ -1,0 +1,3 @@
+MARIADB_HOME=$HOME/development/lib/mariadb-10.3.9
+
+PATH=$PATH:$MARIADB_HOME/bin:$MARIADB_HOME/support-files

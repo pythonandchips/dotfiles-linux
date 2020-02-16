@@ -6,5 +6,7 @@
 	editor = vim
 [alias]
 	force-push = push --force-with-lease
+  last = log -n 1 --format=%B
+  since = log master..
 [push]
 	default = current
