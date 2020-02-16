@@ -1,0 +1,3 @@
+CERTBOT_PATH=$HOME/development/src/github.com/certbot/certbot
+
+PATH=$PATH:$CERTBOT_PATH/venv3/bin

@@ -18,6 +18,8 @@ Plugin 'posva/vim-vue'
 Plugin 'rhysd/vim-crystal'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'tpope/vim-markdown'
+Plugin 'ElmCast/elm-vim'
+Plugin 'hashivim/vim-terraform'
 
 "Colour Schemes
 Plugin 'flazz/vim-colorschemes'
@@ -80,6 +82,10 @@ set noerrorbells
 set novisualbell
 set listchars=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 
+let g:ale_lint_on_text_changed = "never"
+let g:ale_lint_on_enter = 0
+let g:ale_change_sign_column_color = 1
+
 nnoremap <Leader>e :Explore . <CR>
 nnoremap <Leader>E :Explore  <CR>
 map <C-H> <C-W>h
@@ -123,8 +129,15 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-
+autocmd BufNewFile,BufRead *.az set syntax=terraform
 autocmd! bufwritepost .vimrc source ~/.vimrc
+
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *_spec.rb 0r ~/.vim/templates/template_spec.rb
+    autocmd BufNewFile *.rb 0r ~/.vim/templates/template.rb
+  augroup END
+endif
 
 "set colour scheme
 set background=dark

@@ -1,4 +1,4 @@
-export FILESYSTEM_FSINOTIFY_EXECUTABLE_FILE=$HOME/development/lib/inotify-tools-3.14/bin/inotifywait
-ELIXIR_PATH=$HOME/development/lib/elixir-1.5.1
+export FILESYSTEM_FSINOTIFY_EXECUTABLE_FILE=$HOME/development/lib/inotify-tools-3.20.1/bin/inotifywait
+ELIXIR_PATH=$HOME/development/lib/elixir-1.8.1
 
 PATH=$PATH:$ELIXIR_PATH/bin
