@@ -1,48 +1,25 @@
 "MY VIMRC
 
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 "Language plugins
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'fatih/vim-go'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'posva/vim-vue'
-Plugin 'rhysd/vim-crystal'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'tpope/vim-markdown'
-Plugin 'ElmCast/elm-vim'
-Plugin 'hashivim/vim-terraform'
-
-"Colour Schemes
-Plugin 'flazz/vim-colorschemes'
-Plugin 'trevordmiller/nova-vim'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'vim-ruby/vim-ruby'
 
 "Functions
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'sjl/gundo.vim'
-Plugin 'ervandew/supertab'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tomtom/tcomment_vim.git'
-Plugin 'w0rp/ale'
+Plug 'Lokaltog/vim-powerline'
+Plug 'tpope/vim-fugitive'
+Plug 'sjl/gundo.vim'
+Plug 'ervandew/supertab'
+Plug 'kien/ctrlp.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'w0rp/ale'
 
 "Navigation
-Plugin 'jgdavey/vim-blockle'
-Plugin 'tpope/vim-endwise'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'mileszs/ack.vim'
-Plugin 'majutsushi/tagbar'
+Plug 'tpope/vim-endwise'
+Plug 'vim-scripts/matchit.zip'
+Plug 'mileszs/ack.vim'
 
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 syntax on
@@ -138,7 +115,3 @@ if has("autocmd")
     autocmd BufNewFile *.rb 0r ~/.vim/templates/template.rb
   augroup END
 endif
-
-"set colour scheme
-set background=dark
-colorscheme solarized

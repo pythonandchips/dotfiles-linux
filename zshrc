@@ -1,4 +1,4 @@
-PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 export HISTFILE=~/.histfile
 export HISTSIZE=1000
@@ -14,15 +14,13 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
-source $HOME/.dotfiles/.zsh-prompt
-source $HOME/.dotfiles/.zsh-alias
-source $HOME/.dotfiles/.flatpak-alias
-
+source $HOME/.config/zsh/prompt
+source $HOME/.config/zsh/alias
 
 LIBDIR=$HOME/development/lib
 SOURCEDIR=$HOME/development/src
 
-for f in $HOME/.dotfiles/env/*; do
+for f in $HOME/.config/zsh/env/*; do
   source $f
 done
 
