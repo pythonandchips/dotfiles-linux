@@ -11,7 +11,7 @@ function git_current_branch() {
   echo ${ref#refs/heads/}
 }
 
-eval `dircolors $HOME/.dotfiles/.dircolors`
+eval `dircolors  $HOME/.config/zsh/dircolors`
 
 local return_code="%(?..%{$fg[red]%}%? %{$reset_color%})"
 

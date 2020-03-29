@@ -2,7 +2,7 @@
 	name = Colin Gemmell
 	email = pythonandchips@gmail.com
 [core]
-	excludesfile = /home/colin/.gitignore
+	excludesfile = /home/colin/.config/git/ignore
 	editor = vim
 [alias]
 	force-push = push --force-with-lease
