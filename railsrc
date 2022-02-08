@@ -5,3 +5,7 @@
 --skip-coffee
 --skip-test
 --skip-system-test
+--skip-action-text
+--skip-action-mailbox
+--skip-active-storage
+--skip-turbolinks

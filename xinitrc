@@ -1,3 +1,5 @@
+setxkbmap -layout gb
+
 if [[ -f "${HOME}/.Xmodmap" ]]; then
 	xmodmap "${HOME}/.Xmodmap"
 fi

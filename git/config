@@ -8,5 +8,9 @@
 	force-push = push --force-with-lease
   last = log -n 1 --format=%B
   since = log master..
+  reset-main = !sh -c 'git fetch --prune && git reset --hard origin/main'
+	recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 [push]
 	default = current
+[init]
+	defaultBranch = main

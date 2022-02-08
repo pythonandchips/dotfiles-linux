@@ -1,0 +1,2 @@
+export GHPATH=$HOME/development/src/github.com/cli/cli
+PATH=$PATH:$GHPATH/bin

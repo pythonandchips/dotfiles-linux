@@ -20,7 +20,7 @@ source $HOME/.config/zsh/alias
 LIBDIR=$HOME/development/lib
 SOURCEDIR=$HOME/development/src
 
-for f in $HOME/.config/zsh/env/*; do
+for f in $HOME/.config/zsh/env/*.enabled; do
   source $f
 done
 

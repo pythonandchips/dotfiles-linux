@@ -1,0 +1,2 @@
+export FLUTTERPATH=$LIBDIR/flutter-2.2.1
+PATH=$PATH:$FLUTTERPATH/bin

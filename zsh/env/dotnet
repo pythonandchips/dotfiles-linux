@@ -1,2 +1,0 @@
-DOTNETPATH=$LIBDIR/coreclr-2.1.2
-PATH=$PATH:$DOTNETPATH/Tools/dotnetcli

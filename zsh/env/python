@@ -1,2 +1,0 @@
-export PYTHONPATH=$LIBDIR/python-2.7.14
-PATH=$PATH:$PYTHONPATH/bin

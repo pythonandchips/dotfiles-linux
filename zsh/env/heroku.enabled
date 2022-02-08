@@ -1,0 +1,3 @@
+HEROKUPATH=$LIBDIR/heroku
+
+PATH=$PATH:$HEROKUPATH/usr/bin

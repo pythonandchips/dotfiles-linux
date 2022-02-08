@@ -1,0 +1,7 @@
+POSTGRES_PATH=$LIBDIR/postgresql-13.1
+export PGDATA=$POSTGRES_PATH/config
+
+PATH=$PATH:$POSTGRES_PATH/bin
+
+alias pg_start="pg_ctl -D ${POSTGRES_PATH}/data -l ${POSTGRES_PATH}/log start"
+alias pg_stop="pg_ctl -D ${POSTGRES_PATH}/data -l ${POSTGRES_PATH}/log stop"

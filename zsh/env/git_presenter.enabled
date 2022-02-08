@@ -1,0 +1,3 @@
+GIT_PRESENTER_PATH=$HOME/development/src/github.com/pythonandchips/git-presenter
+
+PATH=$PATH:$GIT_PRESENTER_PATH/bin

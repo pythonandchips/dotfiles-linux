@@ -4,15 +4,17 @@ call plug#begin('~/.vim/plugged')
 
 "Language plugins
 Plug 'vim-ruby/vim-ruby'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 "Functions
 Plug 'Lokaltog/vim-powerline'
 Plug 'tpope/vim-fugitive'
-Plug 'sjl/gundo.vim'
-Plug 'ervandew/supertab'
+Plug 'simnalamburt/vim-mundo'
+Plug 'neoclide/coc.nvim', {'branch' : 'release'}
 Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 "Navigation
 Plug 'tpope/vim-endwise'
@@ -30,6 +32,9 @@ let maplocalleader = ","
 let g:go_fmt_command = "goimports"
 
 let g:netrw_special_syntax= 1
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
 set autowrite
 set autoread
 set ruler
@@ -62,6 +67,8 @@ set listchars=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 let g:ale_lint_on_text_changed = "never"
 let g:ale_lint_on_enter = 0
 let g:ale_change_sign_column_color = 1
+let g:ale_set_highlights = 0
+let g:ale_disable_lsp = 1
 
 nnoremap <Leader>e :Explore . <CR>
 nnoremap <Leader>E :Explore  <CR>
@@ -80,8 +87,7 @@ cnoreabbrev Ack Ack!
 :nnoremap <Leader>f :Ack! <C-r><C-w> <CR>
 
 "custom mappings
-nnoremap <F5> :GundoToggle<CR>
-nnoremap <F6> :TagbarToggle<CR>
+nnoremap <F5> :MundoToggle<CR>
 
 "diff options
 :set diffopt+=iwhite

@@ -1,0 +1,2 @@
+export PYTHONPATH=$LIBDIR/python-3.9.0
+PATH=$PATH:$PYTHONPATH/bin
